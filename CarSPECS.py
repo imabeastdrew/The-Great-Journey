@@ -50,11 +50,10 @@ print(f"R-squared: {model.get_r_squared():.4f}")
 # predictions = model.predict(X)
 # print("Predictions:", predictions.flatten())
     
-# Plot the model
+# Then plot the model
 fig, ax = model.plot_3d(X, y_acceleration_capability)
 plt.title("Car Acceleration Capability")
 plt.xlabel("Engine Size (L)")
 plt.ylabel("Horsepower")
 plt.clabel("Acceleration Capability")
 plt.show()
-

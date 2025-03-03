@@ -22,7 +22,7 @@ class MultipleLinearRegression:
         # Add intercept term (column of ones)
         X_with_intercept = np.column_stack((np.ones(len(X)), X))
         
-        # Reshape y if needed
+        # Reshape y as needed
         y_reshaped = y.reshape(-1, 1) if len(y.shape) == 1 else y
         
         # Calculate coefficients using least squares
